@@ -1,6 +1,6 @@
-# Prerequisite
+## Prerequisite
 
-Please install composer and PHP version 8.2 or later. Configure and install additional PHP extensions as needed.
+Please install composer and PHP version 8.2 or newer version. Configure and install additional PHP extensions as needed.
 
 ## To Run This Project
 Clone this repo, using cmd or any terminal and then navigate to the root folder and run
