@@ -1,0 +1,21 @@
+.react-date-picker__wrapper {
+    border: none !important;
+}
+.react-date-picker__inputGroup {
+    margin-right: 16px;
+}
+.react-date-picker__calendar-button.react-date-picker__button {
+    font-size: x-large;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.spin {
+    animation: spin 2s linear infinite; /* 2 seconds per rotation */
+}
