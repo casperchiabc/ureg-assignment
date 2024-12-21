@@ -1,11 +1,9 @@
 <?php
 
 namespace App\Services;
-use App\Models\Rate;
 use App\Models\Currency;
-use Illuminate\Support\Facades\Log;
 
-class ConversionRateService
+class CurrencyRateService
 {
     public function getCurrencyRates($currencyId, $effectiveDate) 
     {

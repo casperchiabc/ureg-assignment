@@ -3,14 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Services\ConversionRateService;
-use Illuminate\Support\Facades\Log;
+use App\Services\CurrencyRateService;
 
 class RateController extends Controller
 {
     private $crs;
 
-    public function __construct(ConversionRateService $crs)
+    public function __construct(CurrencyRateService $crs)
     {
         $this->crs = $crs;
     }
@@ -22,8 +21,6 @@ class RateController extends Controller
             'currencyId' => 'required|exists:currencies,id',
             'date' => 'required|date_format:Y-m-d',
         ]);
-
-        Log::debug($validatedData);
 
         return $this->crs->getCurrencyRates($validatedData['currencyId'], $validatedData['date']);
     }
